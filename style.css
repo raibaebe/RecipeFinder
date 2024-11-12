@@ -77,12 +77,12 @@ footer {
     max-height: 0;
     overflow: hidden;
     transition: max-height 0.5s ease-in-out;
-    padding: 0 10px; /* Add horizontal padding if needed */
+    padding: 0 10px; 
 }
 
 .faq-answer.open {
-    max-height: 500px; /* Large enough value to accommodate the content */
-    padding: 10px 0; /* Padding to add when open */
+    max-height: 500px; 
+    padding: 10px 0; 
 }
 * {
 
@@ -159,12 +159,12 @@ header {
     height: auto; 
     transition: transform 0.3s ease-in-out;
    margin-left: 50px;
-    width: 80%; /* Adjust the percentage to control the size */
+    width: 80%; 
       
        
 }
 .side-image:hover {
-    transform: scale(1.1); /* Scales the image slightly bigger when hovered */
+    transform: scale(1.1); 
 }
 .btn {
     font-family: inherit;
@@ -269,8 +269,8 @@ header {
     justify-content: center; 
 }
 .search-btn:hover {
-    color: white; /* Change to a color with good contrast */
-    background-color: var(--primary-color-dark); /* Optional: Change background color */
+    color: white; 
+    background-color: var(--primary-color-dark); 
 }
 .search-control::placeholder {
     color: var(--primary-color);
@@ -289,8 +289,8 @@ header {
 }
 
 .recipe-btn:hover {
-    transform: scale(1.05); /* Slightly enlarges the button */
-    background-color: var(--primary-color-dark); /* Changes background color on hover */
+    transform: scale(1.05); 
+    background-color: var(--primary-color-dark); 
 }
 
 
@@ -517,12 +517,12 @@ button.dark-mode {
     color: #ffffff;
 }
 .dark-mode .social-media a i {
-    color: #ffffff !important; /* Ensures icons turn white */
+    color: #ffffff !important; 
 }
 
 .faq-section.dark-mode {
-    background-color: #3e3e3e ; /* Black background */
-    color: #ffffff /* White text */
+    background-color: #3e3e3e ; 
+    color: #ffffff 
 }
 /* Mobile Responsive Styles */
 @media (max-width: 768px) {
@@ -533,7 +533,7 @@ button.dark-mode {
     body {
         margin: 0;
         padding: 0;
-        font-size: 0.9rem; /* Slightly reduce font size for better fit */
+        font-size: 0.9rem; 
         line-height: 1.4;
     }
 
@@ -585,14 +585,14 @@ button.dark-mode {
     .search-control,
     .btn {
         width: 300px;
-        max-width: 100%; /* Ensures the width does not exceed the container on smaller screens */
-        box-sizing: border-box; /* Includes padding and border in the width */
+        max-width: 100%; 
+        box-sizing: border-box; 
     }
 
     .two-sides-container {
         display: flex;
-        flex-direction: column; /* Ensures the children stack vertically */
-        gap: 20px; /* Adds spacing between sections */
+        flex-direction: column;
+        gap: 20px; 
         width: 100%;
     }
     .header-right {
@@ -603,7 +603,7 @@ button.dark-mode {
     .side-image {
       margin-right: 50px;
         width: 240px;
-        height: 130px; /* Optional: maintain proportions if needed */
+        height: 130px; 
     }
     .main-content-left,
     .main-content-right {
