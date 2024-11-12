@@ -529,7 +529,8 @@ button.dark-mode {
     .navbar-nav {
         flex-direction: column;
         gap: 10px;
-    } body {
+    } 
+    body {
         margin: 0;
         padding: 0;
         font-size: 0.9rem; /* Slightly reduce font size for better fit */
@@ -548,9 +549,9 @@ button.dark-mode {
     .container {
         padding: 10px;
         max-width: 100%;
+        align-items: center;
     }
-  
-    
+
     .logo {
         max-width: 150px;
     }
@@ -583,13 +584,27 @@ button.dark-mode {
 
     .search-control,
     .btn {
-        width: 100%;
+        width: 300px;
+        max-width: 100%; /* Ensures the width does not exceed the container on smaller screens */
+        box-sizing: border-box; /* Includes padding and border in the width */
     }
 
     .two-sides-container {
-        flex-direction: column;
+        display: flex;
+        flex-direction: column; /* Ensures the children stack vertically */
+        gap: 20px; /* Adds spacing between sections */
+        width: 100%;
     }
-
+    .header-right {
+        font-size: 20px; 
+        margin-left: 30px;
+    }
+   
+    .side-image {
+      margin-right: 50px;
+        width: 240px;
+        height: 130px; /* Optional: maintain proportions if needed */
+    }
     .main-content-left,
     .main-content-right {
         max-width: 100%;
@@ -597,7 +612,9 @@ button.dark-mode {
         margin-top: 20px; 
         padding: 10px;
     }
-
+.faq-section{
+    margin-top: 50px;
+}
     .cards-container {
         flex-direction: column;
         gap: 50px;
@@ -606,14 +623,17 @@ button.dark-mode {
     }
 
     .card {
+        
         position: relative;
         transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out; 
     }
+ 
     
     .card:hover {
         transform: translateY(-10px) !important;
         box-shadow: 0 15px 25px rgba(0, 0, 0, 0.2) !important;
     }
+    
     @keyframes hoverLift {
         from {
             transform: translateY(0);
@@ -624,6 +644,7 @@ button.dark-mode {
             box-shadow: 0 15px 25px rgba(0, 0, 0, 0.2);
         }
     }
+
     .card-img-top {
         max-height: 150px;
         object-fit: cover;
@@ -636,6 +657,7 @@ button.dark-mode {
     .btn-with-icon:hover i {
         transform: rotate(360deg);
     }
+    
     footer {
         padding: 10px;
     }
@@ -644,6 +666,7 @@ button.dark-mode {
         font-size: 1rem;
     }
 }
+
 @keyframes ripple-animation {
     to {
         transform: scale(15);
